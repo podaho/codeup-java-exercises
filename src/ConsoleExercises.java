@@ -33,5 +33,6 @@ public class ConsoleExercises {
         float height = Float.parseFloat(hgt);
         System.out.println("Area of the classroom is: "+length+"x"+width+"="+length*width);
         System.out.println("Perimeter of the classroom is: ("+length+"+"+width+")x2="+(length+width)*2);
+        System.out.println("Volume of the classroom is: ("+length+"x"+width+"x"+height+"="+length*width*height);
     }
 }
