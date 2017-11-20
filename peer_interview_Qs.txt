@@ -1,0 +1,40 @@
+================================= PEER INTERVIEW Q'S
+How does Java run?
+    Code -> Compiler -> Byte Code -> JVM -> machine instructions -> OS
+
+What is an IDE? Which one do you use?
+    Integrated Development Environment: An software application that provides tools for software development with functionalities such as code editor, build automation tools and debuggers.
+
+How do you run a Java program without an IDE?
+    Run 'javac' on *.java files, then running 'java' on the class name of the file.
+
+What are three significant differences between Java and JavaScript?
+    Java has explicit typing, java is a compiled language, java is class dependent
+
+What are the main technologies included in a JDK?
+    Java Development Kit:  It includes the Java Runtime Environment (JRE), an interpreter/loader (java), a compiler (javac), an archiver (jar), a documentation generator (javadoc) and other tools needed in Java development.
+
+What is explicit casting in Java? Implicit?
+    Explicit: when going from a more precise data type converts to a less precise one, would need explicit declaration of what data types you want to convert.
+    Implicit: when going from a less precise data type to a more precise one, no new type declaration required.
+
+How are strings compared in Java?
+    using the str.equals(str) function.
+
+Given the following variables...
+    String firstName = "Fred";
+    short memberId = 1425;
+...how would you use printf to output "Member 'Fred' ----- #1425"?
+    System.out.printf("Member '%s' ----- #%d", firstName, memberId);
+
+%c	character
+%d	decimal (integer) number (base 10)
+%e	exponential floating-point number
+%f	floating-point number
+%i	integer (base 10)
+%o	octal number (base 8)
+%s	a string of characters
+%u	unsigned decimal (integer) number
+%x	number in hexadecimal (base 16)
+%%	print a percent sign
+\%	print a percent sign

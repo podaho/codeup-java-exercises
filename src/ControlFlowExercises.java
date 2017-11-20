@@ -1,6 +1,39 @@
 import java.util.Scanner;
 
 public class ControlFlowExercises {
+    public static void fizzBuzz(int currNum, byte byThree, byte byFive) {
+        if(currNum < 101) {
+            byte newByThree = byThree;
+            byte newByFive = byFive;
+            if (byThree == 2 || byFive == 4) {
+                String printStr = "";
+                if (byThree == 2) {
+                    printStr += "Fizz";
+                }
+                if (byFive == 4) {
+                    printStr += "Buzz";
+                }
+                System.out.println(printStr);
+            } else {
+                System.out.println(currNum);
+            }
+
+            if (newByThree == 2) {
+                newByThree = 0;
+            } else {
+                newByThree += 1;
+            }
+            if (newByFive == 4) {
+                newByFive = 0;
+            } else {
+                newByFive += 1;
+            }
+            fizzBuzz(++currNum, newByThree, newByFive);
+        } else {
+            return;
+        }
+    }
+
     public static void main(String[] args) {
 /************** Loop Basics ***************
 *        byte i = 5;
@@ -62,6 +95,8 @@ public class ControlFlowExercises {
 *            System.out.println(i);
 *        }
 *******************************************/
+
+
 
 
 /************* Table of Powers *************
@@ -146,5 +181,7 @@ public class ControlFlowExercises {
             resp = sc.nextByte();
             if(resp != 1) cont = false;
         } while(cont);
+
+        fizzBuzz(1,(byte) 0,(byte) 0);
     }
 }
