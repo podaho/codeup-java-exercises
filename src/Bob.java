@@ -9,7 +9,7 @@ public class Bob {
             response = sc.nextLine();
             if(response.endsWith("?")) {
                 System.out.println("Bob says: \"Sure.\"");
-            } else if(response.equals("")) {
+            } else if(response.trim().equals("")) {
                 System.out.println("Bob says: \"Fine. Be that way!\"");
             } else if(response.equals(response.toUpperCase())) {
                 System.out.println("Bob says: \"Whoa, chill out!\"");
