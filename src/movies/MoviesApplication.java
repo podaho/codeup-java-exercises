@@ -1,7 +1,6 @@
-import movies.Movie;
-import movies.MoviesArray;
-import util.Input;
+package movies;
 
+import util.Input;
 import java.util.ArrayList;
 
 public class MoviesApplication {
